@@ -6,13 +6,6 @@ import (
 	"time"
 )
 
-<<<<<<< HEAD
-
-func main() {
-	http.HandleFunc("/", handler)
-	fmt.Println("Running demo app. Press Ctrl+C to exit...")
-	log.Fatal(http.ListenAndServe(":8888", nil))
-=======
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		currentTime := time.Now().Format("2006-01-02 15:04:05")
@@ -25,5 +18,4 @@ func main() {
 	})
 
 	http.ListenAndServe(":8080", nil)
->>>>>>> 2f6f4fe30ddf2ed971a1c446cdcb441522f4344c
 }
