@@ -9,7 +9,7 @@ import (
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		currentTime := time.Now().Format("2006-01-02 15:04:05")
-		fmt.Fprintf(w, "<h1>Hello 21.11.2026 10:14, DevOps!</h1><p>Current time: %s</p>", currentTime)
+		fmt.Fprintf(w, "<h1>Hello 22.11.2026 10:14, DevOps!</h1><p>Current time: %s</p>", currentTime)
 	})
 
 	http.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
